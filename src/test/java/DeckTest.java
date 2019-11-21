@@ -21,14 +21,14 @@ public class DeckTest {
     }
 
     @Test
-    public void canShuffleDesk(){
+    public void canShuffleDeck(){
         deck.shuffleCards();
         assertEquals(52, deck.cardCount());
     }
 
     @Test
     public void canDealCard(){
-        deck.dealCard();
+        Card dealtCard = deck.dealCard();
         assertEquals(51, deck.cardCount());
     }
 }

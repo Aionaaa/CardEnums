@@ -33,7 +33,7 @@ public class Deck {
 
     }
 
-    public void dealCard() {
-        this.cards.remove(0);
+    public Card dealCard() {
+        return this.cards.remove(0);
     }
 }
